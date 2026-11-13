@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f8fc">
+  <meta name="description" content="Sign in to your RadeNext people operations workspace.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Log in — RadeNext HRMS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body class="auth-body">
+  <a class="skip-link" href="#auth-main">Skip to sign in</a>
+  <main class="auth-layout" id="auth-main">
+    <section class="auth-story" aria-label="About RadeNext">
+      <a class="brand auth-brand" href="index.html" aria-label="RadeNext home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>rade<span class="brand-light">next</span></span></a>
+      <div class="story-copy">
+        <p class="story-kicker"><span aria-hidden="true"></span> YOUR PEOPLE, IN SYNC</p>
+        <h1>Good work starts with a clearer view.</h1>
+        <p>One connected workspace for the people, time, and work that move your organization forward.</p>
+      </div>
+      <div class="story-preview" aria-hidden="true">
+        <div class="preview-top"><span class="preview-mark">r.</span><span>Attendance overview</span><span class="preview-live"><i></i> Sample data</span></div>
+        <div class="preview-body">
+          <div class="preview-label">ATTENDANCE · THIS WEEK</div>
+          <div class="preview-metric"><strong>86.3%</strong><span>present today</span><small>214 of 248 employees</small></div>
+          <div class="preview-chart" role="img" aria-label="Sample attendance trend this week: Monday 82 percent, Tuesday 89 percent, Wednesday 85 percent, Thursday 92 percent, Friday 86 percent.">
+            <div class="preview-axis" aria-hidden="true"><span>100%</span><span>50%</span><span>0%</span></div>
+            <div class="preview-plot"><i style="--bar:82%"><b>82%</b></i><i style="--bar:89%"><b>89%</b></i><i style="--bar:85%"><b>85%</b></i><i style="--bar:92%"><b>92%</b></i><i style="--bar:86%"><b>86%</b></i></div>
+          </div>
+          <div class="preview-footer"><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span></div>
+        </div>
+        <div class="preview-people"><span class="preview-activity" aria-hidden="true">↗</span><span><b>3 leave requests need review</b><small>Open the workspace to review requests</small></span><span class="preview-arrow" aria-hidden="true">→</span></div>
+      </div>
+      <div class="story-foot"><span>RADE NEXT · PEOPLE, IN SYNC</span><span>© <span id="year">2026</span> RadeNext</span></div>
+    </section>
+
+    <section class="auth-panel" aria-labelledby="auth-title">
+      <a class="auth-back" href="index.html"><span aria-hidden="true">←</span> Back to RadeNext</a>
+      <div class="auth-form-wrap">
+        <div class="auth-heading">
+          <div class="auth-mobile-brand"><a class="brand" href="index.html" aria-label="RadeNext home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>rade<span class="brand-light">next</span></span></a></div>
+          <p class="form-eyebrow" id="form-eyebrow">YOUR WORKSPACE AWAITS</p>
+          <h2 id="auth-title">Welcome back</h2>
+          <p class="auth-subtitle" id="auth-subtitle">Sign in to continue to your RadeNext workspace.</p>
+        </div>
+
+        <div class="form-notice" id="form-notice" role="status" aria-live="polite" hidden></div>
+
+        <form id="login-form" class="auth-form" novalidate>
+          <div class="field-group">
+            <label for="email">Work email</label>
+            <input id="email" name="email" type="email" inputmode="email" autocomplete="username" placeholder="you@company.com" aria-describedby="email-error" required>
+            <span class="field-error" id="email-error"></span>
+          </div>
+          <div class="field-group password-group" id="password-group">
+            <div class="field-label-row"><label for="password">Password</label><button type="button" class="text-action" id="forgot-toggle">Forgot password?</button></div>
+            <div class="password-input-wrap"><input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" aria-describedby="password-error" required><button type="button" class="password-toggle" id="password-toggle" aria-label="Show password" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.8 12s3.2-6 9.2-6 9.2 6 9.2 6-3.2 6-9.2 6-9.2-6-9.2-6Z"/><circle cx="12" cy="12" r="2.6"/></svg></button></div>
+            <span class="field-error" id="password-error"></span>
+          </div>
+          <div class="remember-row" id="remember-row"><label class="checkbox-label"><input id="remember" type="checkbox" name="remember"><span class="custom-check" aria-hidden="true"></span><span>Keep me signed in</span></label></div>
+          <button type="submit" class="auth-submit" id="submit-button"><span id="submit-label">Sign in</span><span aria-hidden="true">→</span></button>
+        </form>
+
+        <div class="auth-divider" id="auth-divider"><span></span><small>OR CONTINUE WITH</small><span></span></div>
+        <button type="button" class="google-button" id="google-button"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M43.6 24.5c0-1.4-.1-2.8-.4-4.1H24v7.8h11a9.4 9.4 0 0 1-4.1 6.2v5.1h6.6c3.9-3.6 6.1-8.8 6.1-15Z"/><path fill="#34A853" d="M24 44c5.5 0 10.1-1.8 13.5-4.8l-6.6-5.1c-1.8 1.2-4.1 1.9-6.9 1.9-5.3 0-9.8-3.6-11.4-8.5H5.8v5.3A20 20 0 0 0 24 44Z"/><path fill="#FBBC05" d="M12.6 27.5a12 12 0 0 1 0-7v-5.3H5.8a20 20 0 0 0 0 17.6l6.8-5.3Z"/><path fill="#EA4335" d="M24 12c3 0 5.7 1 7.8 3.1l5.8-5.8C34.1 6 29.5 4 24 4A20 20 0 0 0 5.8 15.2l6.8 5.3C14.2 15.6 18.7 12 24 12Z"/></svg><span>Continue with Google</span></button>
+        <p class="auth-bottom" id="auth-bottom">New to RadeNext? <a href="signup.html">Create an account</a></p>
+        <p class="auth-legal">Need workspace access? Your organization’s RadeNext administrator can help.</p>
+      </div>
+      <div class="auth-help">Having trouble? <a href="mailto:hello@radenext.com?subject=RadeNext%20login%20help">Get in touch</a></div>
+    </section>
+  </main>
+  <script src="login.js" defer></script>
+</body>
+</html>

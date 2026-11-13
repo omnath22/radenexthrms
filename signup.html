@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f8fc">
+  <meta name="description" content="Create a RadeNext workspace for your people operations team.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Create your workspace — RadeNext HRMS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body class="auth-body signup-page">
+  <a class="skip-link" href="#auth-main">Skip to create account</a>
+  <main class="auth-layout" id="auth-main">
+    <section class="auth-story" aria-label="About RadeNext">
+      <a class="brand auth-brand" href="index.html" aria-label="RadeNext home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>rade<span class="brand-light">next</span></span></a>
+      <div class="story-copy">
+        <p class="story-kicker"><span aria-hidden="true"></span> YOUR PEOPLE, IN SYNC</p>
+        <h1>Bring your people operations into one workspace.</h1>
+        <p>Start with a clearer view of your employees, attendance, leave, and the work that keeps your organization moving.</p>
+      </div>
+      <div class="story-preview" aria-hidden="true">
+        <div class="preview-top"><span class="preview-mark">r.</span><span>Attendance overview</span><span class="preview-live"><i></i> Sample data</span></div>
+        <div class="preview-body">
+          <div class="preview-label">ATTENDANCE · THIS WEEK</div>
+          <div class="preview-metric"><strong>86.3%</strong><span>present today</span><small>214 of 248 employees</small></div>
+          <div class="preview-chart">
+            <div class="preview-axis"><span>100%</span><span>50%</span><span>0%</span></div>
+            <div class="preview-plot"><i style="--bar:82%"><b>82%</b></i><i style="--bar:89%"><b>89%</b></i><i style="--bar:85%"><b>85%</b></i><i style="--bar:92%"><b>92%</b></i><i style="--bar:86%"><b>86%</b></i></div>
+          </div>
+          <div class="preview-footer"><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span></div>
+        </div>
+        <div class="preview-people"><span class="preview-activity" aria-hidden="true">03</span><span><b>3 leave requests need review</b><small>Sample workflow · Leave management</small></span></div>
+      </div>
+      <div class="story-foot"><span>RADE NEXT · PEOPLE, IN SYNC</span><span>© <span id="year">2026</span> RadeNext</span></div>
+    </section>
+
+    <section class="auth-panel signup-panel" aria-labelledby="auth-title">
+      <a class="auth-back" href="index.html"><span aria-hidden="true">←</span> Back to RadeNext</a>
+      <div class="auth-form-wrap signup-form-wrap">
+        <div class="auth-heading">
+          <div class="auth-mobile-brand"><a class="brand" href="index.html" aria-label="RadeNext home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>rade<span class="brand-light">next</span></span></a></div>
+          <p class="form-eyebrow">GET STARTED WITH RADENEXT</p>
+          <h2 id="auth-title">Create your workspace</h2>
+          <p class="auth-subtitle">Set up your people operations workspace in a few simple steps.</p>
+        </div>
+
+        <div class="form-notice" id="signup-notice" role="status" aria-live="polite" hidden></div>
+
+        <form id="signup-form" class="auth-form signup-form" novalidate>
+          <div class="field-group">
+            <label for="full-name">Your name</label>
+            <input id="full-name" name="name" type="text" autocomplete="name" placeholder="e.g. Maya Chen" aria-describedby="name-error" required>
+            <span class="field-error" id="name-error"></span>
+          </div>
+          <div class="field-group">
+            <label for="work-email">Work email</label>
+            <input id="work-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@company.com" aria-describedby="email-error" required>
+            <span class="field-error" id="email-error"></span>
+          </div>
+          <div class="field-group">
+            <label for="company">Organization name</label>
+            <input id="company" name="organization" type="text" autocomplete="organization" placeholder="Your company" aria-describedby="company-error" required>
+            <span class="field-error" id="company-error"></span>
+          </div>
+          <div class="field-group">
+            <label for="new-password">Create a password</label>
+            <div class="password-input-wrap"><input id="new-password" name="password" type="password" minlength="8" autocomplete="new-password" placeholder="At least 8 characters" aria-describedby="password-hint password-error" required><button type="button" class="password-toggle" id="password-toggle" aria-label="Show password" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.8 12s3.2-6 9.2-6 9.2 6 9.2 6-3.2 6-9.2 6-9.2-6-9.2-6Z"/><circle cx="12" cy="12" r="2.6"/></svg></button></div>
+            <span class="field-hint" id="password-hint">Use at least 8 characters. A longer password is even better.</span>
+            <span class="field-error" id="password-error"></span>
+          </div>
+          <button type="submit" class="auth-submit" id="submit-button"><span>Create workspace</span><span aria-hidden="true">→</span></button>
+        </form>
+
+        <div class="auth-divider"><span></span><small>OR SIGN UP WITH</small><span></span></div>
+        <button type="button" class="google-button" id="google-button"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M43.6 24.5c0-1.4-.1-2.8-.4-4.1H24v7.8h11a9.4 9.4 0 0 1-4.1 6.2v5.1h6.6c3.9-3.6 6.1-8.8 6.1-15Z"/><path fill="#34A853" d="M24 44c5.5 0 10.1-1.8 13.5-4.8l-6.6-5.1c-1.8 1.2-4.1 1.9-6.9 1.9-5.3 0-9.8-3.6-11.4-8.5H5.8v5.3A20 20 0 0 0 24 44Z"/><path fill="#FBBC05" d="M12.6 27.5a12 12 0 0 1 0-7v-5.3H5.8a20 20 0 0 0 0 17.6l6.8-5.3Z"/><path fill="#EA4335" d="M24 12c3 0 5.7 1 7.8 3.1l5.8-5.8C34.1 6 29.5 4 24 4A20 20 0 0 0 5.8 15.2l6.8 5.3C14.2 15.6 18.7 12 24 12Z"/></svg><span>Continue with Google</span></button>
+        <p class="auth-bottom">Already have a RadeNext account? <a href="login.html">Sign in</a></p>
+        <p class="auth-legal">Your details stay in this preview and aren’t sent to a server.</p>
+      </div>
+      <div class="auth-help">Questions? <a href="mailto:hello@radenext.com?subject=RadeNext%20workspace%20setup">Talk to our team</a></div>
+    </section>
+  </main>
+  <script src="signup.js" defer></script>
+</body>
+</html>
